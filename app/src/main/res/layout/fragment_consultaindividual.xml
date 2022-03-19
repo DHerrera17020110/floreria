@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultaIndividualFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="outsideInset">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="140dp"
+                        android:layout_marginTop="40dp"
+                        android:height="60dp"
+                        android:fontFamily="cursive"
+                        android:text="Consulta Cliente"
+                        android:textColor="#FF1100"
+                        android:textSize="24sp" />
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="90dp"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/id_cli_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="clave cliente"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:text="identificador cliente" />
+
+                <EditText
+                    android:id="@+id/id_nombre_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="nombre"
+                    android:inputType="textPersonName" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:text="nombre del cliente"/>
+
+                <EditText
+                    android:id="@+id/telefono_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="telefono"
+                    android:inputType="phone" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:text="telefono"
+                    android:enabled="false"/>
+
+                <EditText
+                    android:id="@+id/edad_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="edad"
+                    android:inputType="text" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:text="edad"
+                    android:enabled="false"/>
+
+                <EditText
+                    android:id="@+id/sexo_cliente_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="sexo"
+                    android:inputType="text" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:text="sexo"/>
+
+
+
+                <Button
+                    android:id="@+id/button_limpiar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="limpiar"/>
+
+                <Button
+                    android:id="@+id/botonbuscar_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="buscar"
+                    app:backgroundTint="#2196F3" />
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+</RelativeLayout>

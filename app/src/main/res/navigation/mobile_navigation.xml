@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.sistemafloreria.ui.home.HomeFragment"
+        android:label="Menu Principal"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_guardarcliente"
+        android:name="com.example.sistemafloreria.ui.gallery.GuardarClienteFragment"
+        android:label="Guardar Cliente"
+        tools:layout="@layout/fragment_guardarcliente" >
+        <action
+            android:id="@+id/action_nav_guardarcliente_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_eliminarcliente"
+        android:name="com.example.sistemafloreria.ui.slideshow.EliminarClienteFragment"
+        android:label="Eliminar Cliente"
+        tools:layout="@layout/fragment_eliminarcliente" />
+    <fragment
+        android:id="@+id/nav_modificarclientefragment"
+        android:name="com.example.sistemafloreria.ModificarClienteFragment"
+        android:label="Modificar Cliente"
+        tools:layout="@layout/fragment_modificarcliente">
+        <action
+            android:id="@+id/action_nav_modificarclientefragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_consultageneralfragment"
+        android:name="com.example.sistemafloreria.ConsultaGeneralFragment"
+        android:label="fragment_consultageneral"
+        tools:layout="@layout/fragment_consultageneral" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_consultaindividualfragment"
+        android:name="com.example.sistemafloreria.ConsultaIndividualFragment"
+        android:label="Consulta Individual"
+        tools:layout="@layout/fragment_consultaindividual" >
+        <action
+            android:id="@+id/action_nav_consultaindividualfragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_agregarFlorFragment"
+        android:name="com.example.sistemafloreria.AgregarFlorFragment"
+        android:label="fragment_agregarflor"
+        tools:layout="@layout/fragment_agregarflor" >
+        <action
+            android:id="@+id/action_nav_agregarFlorFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_eliminarFlorFragment"
+        android:name="com.example.sistemafloreria.EliminarFlorFragment"
+        android:label="fragment_eliminarflor"
+        tools:layout="@layout/fragment_eliminarflor" >
+    </fragment>
+</navigation>

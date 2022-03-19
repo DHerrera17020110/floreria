@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.gallery.GuardarClienteFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="outsideInset">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="140dp"
+                        android:layout_marginTop="40dp"
+                        android:height="60dp"
+                        android:fontFamily="cursive"
+                        android:text="Nuevo Cliente"
+                        android:textColor="#FF0057"
+                        android:textSize="24sp" />
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="90dp"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/id_cli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="ingresa un ID "
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:text="identificador cliente"
+                    android:textColor="#FF0000" />
+                <EditText
+                    android:id="@+id/id_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="ingresa tu nombre"
+                    android:inputType="textPersonName"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:text="nombre cliente"
+                    android:textColor="#FF0000" />
+                <EditText
+                    android:id="@+id/id_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="ingresa un numero de telefono"
+                    android:inputType="phone"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:text="telefono"
+                    android:textColor="#FF0000" />
+
+                <EditText
+                    android:id="@+id/edad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="3"
+                    android:hint="ingresa la edad"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:text="edad"
+                    android:textColor="#FF0000" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/id_radioGenero">
+                    <RadioButton android:id="@+id/radio_masculino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Masculino"/>
+                    <RadioButton android:id="@+id/radio_femenino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Femenino"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:text="sexo"
+                    android:textColor="#FF0000" />
+                <Button
+                    android:id="@+id/button_limpiar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="limpiar"></Button>
+
+                <Button
+                    android:id="@+id/botonguardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="guardar"
+                    app:backgroundTint="#12E11A"></Button>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
